@@ -92,4 +92,21 @@ function extension() {
   document.getElementById('close-btn').addEventListener('click', () => {
     window.close();
   });
+
+  const selectType = document.getElementById('conversionType');
+
+  function filter() {
+    const selectedType = selectType.value;
+    document.querySelectorAll('.converter-row').forEach((row) => {
+      //access each row's data type value
+      const type = row.dataset.type;
+      if (type !== selectedType) {
+        row.classList.add('hidden');
+      } else {
+        row.classList.remove('hidden');
+      }
+    });
+  }
+  document.addEventListener('DOMContentLoaded', filter);
+  selectType.addEventListener('change', filter);
 }
