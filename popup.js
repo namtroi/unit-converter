@@ -67,6 +67,28 @@ function extension() {
     2
   );
 
+  setupConverter(
+    // Ft <-> m
+    'input-ft2',
+    'label-from-ft2',
+    'label-to-m2',
+    'output-m2',
+    'switch-ft2m2',
+    0.0929,
+    2
+  );
+
+  setupConverter(
+    // Ft <-> m
+    'input-in2',
+    'label-from-in2',
+    'label-to-cm2',
+    'output-cm2',
+    'switch-in2cm2',
+    6.4516,
+    2
+  );
+
   document.getElementById('close-btn').addEventListener('click', () => {
     window.close();
   });

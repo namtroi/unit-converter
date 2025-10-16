@@ -8,6 +8,14 @@
   <body>
     <header>
       <h1>Unit Converter</h1>
+
+      <select name="conversionType" id="conversionType">
+        <option value="length">Length</option>
+        <option value="area">Area</option>
+        <option value="temperature">Temperature</option>
+        <option value="weight">Weight</option>
+        <option value="volume">Volume</option>
+      </select>
       <button id="close-btn" title="Close">&times;</button>
     </header>
 
@@ -47,7 +55,42 @@
           </button>
         </form>
       </section>
-      
+
+      <section class="converter-row">
+        <form>
+          <input type="number" id="input-ft2" placeholder="0" />
+          <span class="unit" id="label-from-ft2">ft²</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-m2">0.00</output>
+          <span class="unit" id="label-to-m2">m²</span>
+          <button
+            type="button"
+            id="switch-ft2m2"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
+
+      <section class="converter-row">
+        <form>
+          <input type="number" id="input-in2" placeholder="0" />
+          <span class="unit" id="label-from-in2">in²</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-cm2">0.00</output>
+          <span class="unit" id="label-to-cm2">cm²</span>
+          <button
+            type="button"
+            id="switch-in2cm2"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
     </main>
 
     <script src="popup.js"></script>
