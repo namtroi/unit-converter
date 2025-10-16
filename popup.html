@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Unit Converter</h1>
+      <button id="close-btn" title="Close">&times;</button>
+    </header>
+
+    <main>
+      <section class="converter-row">
+        <form>
+          <input type="number" id="input-ft" placeholder="0" />
+          <span class="unit" id="label-from-ft">ft</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-m">0.00</output>
+          <span class="unit" id="label-to-m">m</span>
+          <button
+            type="button"
+            id="switch-ftm"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
+
+      <section class="converter-row">
+        <form>
+          <input type="number" id="input-in" placeholder="0" />
+          <span class="unit" id="label-from-in">in</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-cm">0.00</output>
+          <span class="unit" id="label-to-cm">cm</span>
+          <button
+            type="button"
+            id="switch-incm"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
+      
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
