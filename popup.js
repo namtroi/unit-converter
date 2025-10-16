@@ -68,7 +68,6 @@ function extension() {
   );
 
   setupConverter(
-    // Ft <-> m
     'input-ft2',
     'label-from-ft2',
     'label-to-m2',
@@ -79,7 +78,6 @@ function extension() {
   );
 
   setupConverter(
-    // Ft <-> m
     'input-in2',
     'label-from-in2',
     'label-to-cm2',
@@ -87,6 +85,46 @@ function extension() {
     'switch-in2cm2',
     6.4516,
     2
+  );
+
+  setupConverter(
+    'input-lb',
+    'label-from-lb',
+    'label-to-kg',
+    'output-kg',
+    'switch-lbkg',
+    0.45,
+    2
+  );
+
+  setupConverter(
+    'input-oz',
+    'label-from-oz',
+    'label-to-g',
+    'output-g',
+    'switch-ozg',
+    28.35,
+    4
+  );
+
+  setupConverter(
+    'input-gal',
+    'label-from-gal',
+    'label-to-L',
+    'output-L',
+    'switch-galL',
+    3.79,
+    4
+  );
+
+  setupConverter(
+    'input-cup',
+    'label-from-cup',
+    'label-to-ml',
+    'output-ml',
+    'switch-cupml',
+    236.59,
+    4
   );
 
   document.getElementById('close-btn').addEventListener('click', () => {
@@ -109,4 +147,5 @@ function extension() {
   }
   document.addEventListener('DOMContentLoaded', filter);
   selectType.addEventListener('change', filter);
+  filter();
 }

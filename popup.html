@@ -12,7 +12,6 @@
       <select name="conversionType" id="conversionType">
         <option value="length">Length</option>
         <option value="area">Area</option>
-        <option value="temperature">Temperature</option>
         <option value="weight">Weight</option>
         <option value="volume">Volume</option>
       </select>
@@ -84,6 +83,78 @@
           <button
             type="button"
             id="switch-in2cm2"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
+
+      <section class="converter-row" data-type="weight">
+        <form>
+          <input type="number" id="input-lb" placeholder="0" />
+          <span class="unit" id="label-from-lb">lb</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-kg">0.00</output>
+          <span class="unit" id="label-to-kg">kg</span>
+          <button
+            type="button"
+            id="switch-lbkg"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
+
+      <section class="converter-row" data-type="weight">
+        <form>
+          <input type="number" id="input-oz" placeholder="0" />
+          <span class="unit" id="label-from-oz">oz</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-g">0.00</output>
+          <span class="unit" id="label-to-g">g</span>
+          <button
+            type="button"
+            id="switch-ozg"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
+
+      <section class="converter-row" data-type="volume">
+        <form>
+          <input type="number" id="input-gal" placeholder="0" />
+          <span class="unit" id="label-from-gal">gal</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-L">0.00</output>
+          <span class="unit" id="label-to-L">L</span>
+          <button
+            type="button"
+            id="switch-galL"
+            class="switch-btn"
+            title="Switch direction"
+          >
+            &#8646;
+          </button>
+        </form>
+      </section>
+
+      <section class="converter-row" data-type="volume">
+        <form>
+          <input type="number" id="input-cup" placeholder="0" />
+          <span class="unit" id="label-from-cup">cup</span>
+          <span class="arrow">&rarr;</span>
+          <output id="output-ml">0.00</output>
+          <span class="unit" id="label-to-ml">ml</span>
+          <button
+            type="button"
+            id="switch-cupml"
             class="switch-btn"
             title="Switch direction"
           >
